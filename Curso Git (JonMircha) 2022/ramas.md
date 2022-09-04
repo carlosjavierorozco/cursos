@@ -30,3 +30,7 @@ git checkout rama-secundaria
 git rebase rama-principal
 
 # Esta linea la modifique desde la rama main
+
+# Modificacion desde la rama GIT
+
+_DEJE ESTAS DOS ULTIMAS LINEAS_
