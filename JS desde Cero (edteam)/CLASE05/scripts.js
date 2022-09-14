@@ -84,10 +84,12 @@ function keylog(){
   let keylogInput = document.getElementById('keylogger');
   let keylog
 
-  keylogInput.addEventListener('keyup',function(){
+  // aunque se puede usar keylog creo que mejor es usar change en este programa.
+  keylogInput.addEventListener('change',function(){
     keylog = this.value
     console.log(keylog);
   })
 }
 
 keylog();
+
