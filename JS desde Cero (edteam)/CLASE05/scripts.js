@@ -76,3 +76,18 @@ function jugar(){
 }
 
 jugar();
+
+
+
+function keylog(){
+
+  let keylogInput = document.getElementById('keylogger');
+  let keylog
+
+  keylogInput.addEventListener('keyup',function(){
+    keylog = this.value
+    console.log(keylog);
+  })
+}
+
+keylog();
