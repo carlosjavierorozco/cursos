@@ -208,13 +208,29 @@ const numeroPrimo = (numero = undefined) => {
 }
 
 
-numeroPrimo(5)
+
+
+//Ejercicio 13)
+//Programa una función que determine si un número es par o impar, pe. miFuncion
+//(29) devolverá Impar. 
+
+const numeroParImpar = (numero = undefined) => {
+  //validar si es undefined
+  //validar el tipo de dato
+
+  return ((numero % 2) === 0)
+    ? console.info(`El nuemro ${numero} es par`)
+    : console.info(`El nuemro ${numero} es impar`)
+}
+
+
+numeroParImpar(21)
+
+
 
 
 
 /*
- 13)
-Programa una función que determine si un número es par o impar, pe. miFuncion
-(29) devolverá Impar. 14) Programa una función para convertir grados Celsius
+ 14) Programa una función para convertir grados Celsius
 a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F.
 */
