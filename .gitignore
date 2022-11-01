@@ -3,3 +3,4 @@ ignorados
 test
 test triste
 commit triste 2
+*.config
