@@ -1,38 +1,21 @@
-//Crear una lista añadiendoles los elementos "li" con textConten, innerHTML y fragment. 
+let symbol1 = Symbol("hola")
+let symbol2 = Symbol("hola")
 
-const lista = ["uno","dos","tres","cuatro","cinco"]
-let $ul = document.createElement("ul")
+console.log(symbol1 == symbol2)
 
-lista.forEach((el)=>{
-  const li = document.createElement("li")
-  li.textContent = el
-  $ul.appendChild(li)
-})
+const NOMBRE = Symbol("carlos Javier")
+const SALUDAR = Symbol()
 
-document.body.appendChild($ul)
-
-const meses = ["Enero","Febrero","Marzo","Abril","Mayo"]
-let $ulContainer = document.createElement("ul")
-
-meses.forEach((el)=>{
-  $ulContainer.innerHTML += `<li>${el}</li>`
-})
-
-document.body.appendChild($ulContainer)
+const persona = {
+  [NOMBRE] : "Carlos"
+}
 
 
-//fragmentos, mejor forma
+console.log(persona[NOMBRE])
 
-const konoha = ["Naruto","Kakashi","Ino"]
-const fragment = document.createDocumentFragment()
-const ulLista = document.createElement("ul")
+persona[SALUDAR] = function (){
+  console.log("Hola")
+}
 
-konoha.forEach((el)=>{
-  let li = document.createElement("li")
-  li.textContent = el
-  fragment.appendChild(li)
-})
-
-ulLista.appendChild(fragment)
-
-document.body.appendChild(ulLista)
+//pasar a anki
+console.log(Object.getOwnPropertySymbols(persona))
