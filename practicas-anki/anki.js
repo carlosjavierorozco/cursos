@@ -1,101 +1,99 @@
-// <template> 
-const $gallery = document.getElementById("gallery")
-const $template = document.getElementById("template").content;
-const $fragment = document.createDocumentFragment();
-let galleryContent = [
-    {
-      title: "lolita",
-      img: "img/loli.jpg"
-    },
-    {
-      title: "chibitas monogatari",
-      img: "img/chibi.jpg"
-    },
-    {
-      title: "rosario girls",
-      img: "img/rosario.jpg"
-    },
-    {
-      title: "luffy",
-      img: "img/luffy.jpg"
-    }];
+// let galleryContent = [
+//     {
+//       title: "lolita",
+//       img: "img/loli.jpg"
+//     },
+//     {
+//       title: "chibitas monogatari",
+//       img: "img/chibi.jpg"
+//     },
+//     {
+//       title: "rosario girls",
+//       img: "img/rosario.jpg"
+//     },
+//     {
+//       title: "luffy",
+//       img: "img/luffy.jpg"
+//     }];
 
-
-galleryContent.forEach((el)=>{
-  $template.querySelector("#img").setAttribute("src", el.img);
-  $template.querySelector("#img").setAttribute("alt",el.title);
-  $template.querySelector("#fig-title").textContent = el.title;
-  const $clone = document.importNode($template,true);
-  $fragment.appendChild($clone); 
-});
-
-$gallery.appendChild($fragment);
-
-//parametro REST
-
-function sum(a,b,...c){
-  let result =  a + b;
-
-  c.forEach((n)=>{result+=n})
-
-  return result // me salio... muy contento xD
+function Animal(nombre){
+  this.nombre = nombre
 }
 
-// heredar de una clase...
-
-// class Animal{
-//   constructor(nombre,raza){
-//     this.nombre = nombre;
-//     this.raza = raza;
-//   }
-
-//   saludar(){
-//     return "hola, soy " + this.nombre
-//   }
-// }
-
-// let animal = new Animal("chopper","reno");
-
-// class Perro extends Animal{
-//   constructor(nombre,raza,tamaño){
-//     super(nombre,raza)
-//     this.tamaño = tamaño;
-//   }
-// }
-
-//herencia prototipica
-
-function Animal(nombre,raza){
-  this.nombre = nombre;
-  this.raza = raza
-}
-
-function Perro(nombre,raza,tamaño){
+function Perro(nombre,raza){
   this.super = Animal;
-  this.super(nombre,raza)
-  this.tamaño = tamaño;
+  this.super(nombre);
+  this.raza = raza
 }
 
 Perro.prototype = new Animal();
 Perro.prototype.constructor = Perro;
 
-let rocko = new Perro("Rocko","shar-pei","mediano");
 
-//console test
-
-let a, b;
-let result = "se espera que a sea mayor que b";
-
-a = 5;
-b = 32;
-
-console.assert(a > b, {a,b,result})
+let rocko = new Perro("Rocko","Shar Pei")
 
 
+let a = 465;
+let b = 50;
+let assert = "se espera que a sea mayor que b"
+console.assert(a > b,{a,b,assert})
+
+let carlos = {
+  nombre: "carlos",
+  edad: 31,
+}
 
 
+//maps
+
+const hermanas = new Map([["mayor","Mariyen"],["mediana","Pelua"],["Pequeña","Maye"]])
+
+const nameSisters = [...hermanas.values()];
+
+console.log(nameSisters)
+
+for([key,value] of hermanas){
+  console.log(key,value)
+}
 
 
+//remove child
+let div = document.getElementById("div")
+let img = document.querySelector("#div>img")
+//div.removeChild(img[0])
+
+//clone nodes
+
+let cloneImg = img.cloneNode(img, true)
+
+//Ver una propiedad, estilo computado en particular. 
+//me
+let objectFit = window.getComputedStyle(img).getPropertyValue("object-fit")
+
+console.log(objectFit)
 
 
+//date
 
+let hoy = new Date()
+
+console.log(hoy)
+
+console.log(hoy.toDateString())
+console.log(hoy.getTimezoneOffset())
+
+//location
+
+//location.replace("https://ankiweb.net/")
+
+//operador ternario
+false ? console.log(true) : console.log(false)
+
+//numero aleatorio entre un minimo y un maximo
+
+let max = 1000;
+let min = 900;
+
+let random = Math.random() * (max-min) + min
+
+console.log(random.toFixed(0))

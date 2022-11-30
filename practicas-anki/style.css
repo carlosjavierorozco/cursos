@@ -1,18 +1,6 @@
-.figure{
+img{
   width: 300px;
-  border: 3px solid purple;
-  display: inline-block;
-}
-
-.img{
-  max-width: 100%;
-  display: inline-block;
-  margin: 0;
-
-}
-
-.fig-caption{
-  background-color: purple;
-  text-transform: uppercase;
-  font-size: 1.6em;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
 }
