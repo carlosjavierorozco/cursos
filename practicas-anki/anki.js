@@ -1,38 +1,99 @@
-//Crear una lista añadiendoles los elementos "li" con textConten, innerHTML y fragment. 
+// let galleryContent = [
+//     {
+//       title: "lolita",
+//       img: "img/loli.jpg"
+//     },
+//     {
+//       title: "chibitas monogatari",
+//       img: "img/chibi.jpg"
+//     },
+//     {
+//       title: "rosario girls",
+//       img: "img/rosario.jpg"
+//     },
+//     {
+//       title: "luffy",
+//       img: "img/luffy.jpg"
+//     }];
 
-const lista = ["uno","dos","tres","cuatro","cinco"]
-let $ul = document.createElement("ul")
+function Animal(nombre){
+  this.nombre = nombre
+}
 
-lista.forEach((el)=>{
-  const li = document.createElement("li")
-  li.textContent = el
-  $ul.appendChild(li)
-})
+function Perro(nombre,raza){
+  this.super = Animal;
+  this.super(nombre);
+  this.raza = raza
+}
 
-document.body.appendChild($ul)
-
-const meses = ["Enero","Febrero","Marzo","Abril","Mayo"]
-let $ulContainer = document.createElement("ul")
-
-meses.forEach((el)=>{
-  $ulContainer.innerHTML += `<li>${el}</li>`
-})
-
-document.body.appendChild($ulContainer)
+Perro.prototype = new Animal();
+Perro.prototype.constructor = Perro;
 
 
-//fragmentos, mejor forma
+let rocko = new Perro("Rocko","Shar Pei")
 
-const konoha = ["Naruto","Kakashi","Ino"]
-const fragment = document.createDocumentFragment()
-const ulLista = document.createElement("ul")
 
-konoha.forEach((el)=>{
-  let li = document.createElement("li")
-  li.textContent = el
-  fragment.appendChild(li)
-})
+let a = 465;
+let b = 50;
+let assert = "se espera que a sea mayor que b"
+console.assert(a > b,{a,b,assert})
 
-ulLista.appendChild(fragment)
+let carlos = {
+  nombre: "carlos",
+  edad: 31,
+}
 
-document.body.appendChild(ulLista)
+
+//maps
+
+const hermanas = new Map([["mayor","Mariyen"],["mediana","Pelua"],["Pequeña","Maye"]])
+
+const nameSisters = [...hermanas.values()];
+
+console.log(nameSisters)
+
+for([key,value] of hermanas){
+  console.log(key,value)
+}
+
+
+//remove child
+let div = document.getElementById("div")
+let img = document.querySelector("#div>img")
+//div.removeChild(img[0])
+
+//clone nodes
+
+let cloneImg = img.cloneNode(img, true)
+
+//Ver una propiedad, estilo computado en particular. 
+//me
+let objectFit = window.getComputedStyle(img).getPropertyValue("object-fit")
+
+console.log(objectFit)
+
+
+//date
+
+let hoy = new Date()
+
+console.log(hoy)
+
+console.log(hoy.toDateString())
+console.log(hoy.getTimezoneOffset())
+
+//location
+
+//location.replace("https://ankiweb.net/")
+
+//operador ternario
+false ? console.log(true) : console.log(false)
+
+//numero aleatorio entre un minimo y un maximo
+
+let max = 1000;
+let min = 900;
+
+let random = Math.random() * (max-min) + min
+
+console.log(random.toFixed(0))
