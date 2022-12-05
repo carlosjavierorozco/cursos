@@ -3,15 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="practicas random de anki">
+  <meta property="og:description" content="en esta pagina encontraras codigo de ejercicios random de mi estudio de programacion con anki">
+  <meta name="twitter:card" content="sumary">
+  <meta >
   <title>Practicas Anki JS</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css" media="screen and (min-width: 600px)">
+  <link rel="apple-touch-icon" href="img/favicon.jpg">
+  <link rel="sssicon" href="img/favicon.jpg">
+  <meta name="theme-color" content="#1214f5">
 </head>
 <body>
+  <h1>practicas anki</h1>
 
   <div id="div">
-    <img src="img/loli.jpg" alt="">
+    <img src="img/loli.jpg" alt="" class="round">
   </div>
 </div>
+
+  <hr>
+
+  <h2>datalist</h2>
+
+  <input list="web-tech" id="web">
+  <datalist id="web-tech">
+    <option value="js">
+    <option value="css">
+    <option value="html">
+  </datalist>
+
+  <hr>
+
+  <h2>opt-group</h2>
+
+  <select name="browsers" id="bws" multiple>
+    <optgroup label="chromium">
+      <option value="br">brave</option>
+      <option value="chr">chrom</option>
+    </optgroup>
+    <optgroup label="others"> 
+      <option value="e">edge</option>      
+    </optgroup>
+  </select>
+
+  <select name="cars" id="cars" size="2">
+    <option value="1">fiat</option>
+    <option value="2">fors</option>
+    <option value="3">kya</option>
+    <option value="4">ferrari</option>
+  </select>
+
+  <hr>
+
+  <h2>imágenes adaptables</h2>
+
+  <picture>
+    <source srcset="img/loli.jpg" media="(max-width: 600px)" />
+    <source srcset="img/konachan.jpg" media="(max-width: 800px)" />
+    <img src="img/rosario.jpg" alt="rosario" />
+  </picture>
+
+  <hr>
+
+
+  <hr>
+
+  <h2>tables</h2>
+  <!-- colorear los dos de rojo -->
+   <table>
+    <colgroup>
+      <col span="2">
+      <col class="col2">
+    </colgroup>
+    <tr>
+      <td>0</td><td>1</td><td>2</td>
+    </tr>
+    <tr>
+      <td>0</td><td>1</td><td>2</td>
+    </tr>
+    <tr>
+      <td>0</td><td>1</td><td>2</td>
+    </tr>
+    <tr>
+      <td>0</td><td>1</td><td>2</td>
+    </tr>
+    <tr>
+      <td>0</td><td>1</td><td>2</td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2>enlaces</h2>
+
+  <a href="tel:0412132432432">llamame</a>
+  <a href="mailto:hola@hola.com">Enlace a correo electrónico</a>
+
+
+  <hr>
+  <h2>random</h2>
+
+  <span>&gt;</span>
+  <span>&nbsp;</span><span>&nbsp;</span>
+  <span>&lt;</span>
+  <span>&amp;</span>
+  <span>&nbsp;</span>
+  <span>&quot;</span>
+  <span>&nbsp;</span>
+  <span>&apos;</span>
+
+  <p>La fecha de mi nacimiento es  <time datetime="1991-04-26">26 de abril de 1991</time></p>
+ 
+
   <script type="text/javascript" src="anki.js"></script>
 
 </body>
