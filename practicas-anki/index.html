@@ -3,119 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="practicas random de anki">
-  <meta property="og:description" content="en esta pagina encontraras codigo de ejercicios random de mi estudio de programacion con anki">
-  <meta name="twitter:card" content="sumary">
-  <meta >
-  <title>Practicas Anki JS</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@jonmircha">
+  <title>Anki Practicas (random)</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css" media="screen and (min-width: 600px)">
   <link rel="apple-touch-icon" href="img/favicon.jpg">
-  <link rel="sssicon" href="img/favicon.jpg">
-  <meta name="theme-color" content="#1214f5">
+
 </head>
 <body>
-  <h1>practicas anki</h1>
+  <h1>practicas random de anki</h1>
+  <h2>Imagenes responsive</h2>
 
-  <div id="div">
-    <img src="img/loli.jpg" alt="" class="round">
-  </div>
-</div>
+  <picture>
+    <source media="(max-width: 500px)" srcset="img/loli.jpg">
+    <source media="(max-width: 800px)" srcset="img/konachan.jpg">
+    <source media="(max-width: 1000px)" srcset="img/rosario.jpg">
+    <img src="img/oshino_shinobu.jpg" alt="oshino">
+  </picture>
 
-  <hr>
 
   <h2>datalist</h2>
 
-  <input list="web-tech" id="web">
-  <datalist id="web-tech">
-    <option value="js">
-    <option value="css">
-    <option value="html">
+  <input type="text" list="datalist">
+  <datalist id="datalist">
+    <option value="carlos">
+    <option value="jesus">
+    <option value="julio">
   </datalist>
 
-  <hr>
+  <h2>acordeon</h2>
 
-  <h2>opt-group</h2>
+  <details>
+    <summary>¿cual es tu esposa?</summary>
+    <p>Mariyen Hernandez</p>
+  </details>
 
-  <select name="browsers" id="bws" multiple>
-    <optgroup label="chromium">
-      <option value="br">brave</option>
-      <option value="chr">chrom</option>
-    </optgroup>
-    <optgroup label="others"> 
-      <option value="e">edge</option>      
-    </optgroup>
-  </select>
+  <h2>inputs</h2>
 
-  <select name="cars" id="cars" size="2">
-    <option value="1">fiat</option>
-    <option value="2">fors</option>
-    <option value="3">kya</option>
-    <option value="4">ferrari</option>
-  </select>
+  <input type="time">
+  <input type="datetime-local">
+  <input type="date">
 
-  <hr>
-
-  <h2>imágenes adaptables</h2>
-
-  <picture>
-    <source srcset="img/loli.jpg" media="(max-width: 600px)" />
-    <source srcset="img/konachan.jpg" media="(max-width: 800px)" />
-    <img src="img/rosario.jpg" alt="rosario" />
-  </picture>
-
-  <hr>
-
-
-  <hr>
-
-  <h2>tables</h2>
-  <!-- colorear los dos de rojo -->
-   <table>
-    <colgroup>
-      <col span="2">
-      <col class="col2">
-    </colgroup>
-    <tr>
-      <td>0</td><td>1</td><td>2</td>
-    </tr>
-    <tr>
-      <td>0</td><td>1</td><td>2</td>
-    </tr>
-    <tr>
-      <td>0</td><td>1</td><td>2</td>
-    </tr>
-    <tr>
-      <td>0</td><td>1</td><td>2</td>
-    </tr>
-    <tr>
-      <td>0</td><td>1</td><td>2</td>
-    </tr>
-  </table>
-  <hr>
-
-  <h2>enlaces</h2>
-
-  <a href="tel:0412132432432">llamame</a>
-  <a href="mailto:hola@hola.com">Enlace a correo electrónico</a>
-
-
-  <hr>
   <h2>random</h2>
 
-  <span>&gt;</span>
-  <span>&nbsp;</span><span>&nbsp;</span>
-  <span>&lt;</span>
-  <span>&amp;</span>
-  <span>&nbsp;</span>
-  <span>&quot;</span>
-  <span>&nbsp;</span>
-  <span>&apos;</span>
+  <div class="color1">
+    <p class="color3">haz hecho 50 tarjetas</p>
+    <p class="color5">estas encendido!</p>
+  </div>
 
-  <p>La fecha de mi nacimiento es  <time datetime="1991-04-26">26 de abril de 1991</time></p>
- 
+  <hr>
 
-  <script type="text/javascript" src="anki.js"></script>
+  <table class="table_2">
+    <tr>
+      <td>12</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+    </tr>
+  </table>
 
+  <hr>  
+
+  <div class="square">  
+      <h4 class="para">hola</h4>
+  </div> 
+
+  <hr>
+
+  <div class="square word-break">
+    <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Eius sapiente, aut aspernatur soluta non consectetur deserunt nostrum iusto distinctio vitae tempore ad labore cumque voluptatibus modi mollitia explicabo impedit dolorem. <span>fjlkadsfjklsdjfkdlsfjdklsafjsdkljfsdkjfsdklajfskdjfksladjfklsdjfklasdjfklsdjfkljasdfkljdsaklfjsdklfjsdkljfsdklajfksdljfksdajfjk</span> </p>
+  </div>
 </body>
 </html>
