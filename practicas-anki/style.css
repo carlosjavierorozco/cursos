@@ -32,7 +32,7 @@ ol{
   filter: drop-shadow(5px 5px 5px lime);
 }
 
-.mix{
+/*.mix{
   clip-path: none;
   border: 1px solid blue;
   position: relative;
@@ -40,14 +40,14 @@ ol{
   height: auto;
 
 
-}
+}*/
 
-.mix img{
+/*.mix img{
   max-width: 100%;
   position: absolute;
   top: 0;
   mix-blend-mode: color;
-}
+}*/
 
 .lista{
   background-color: rgba(125, 124, 230, .5);
@@ -63,4 +63,67 @@ li:nth-child(-n+4){
 
 :indeterminate {
   background-color: red;
+}
+
+
+body{
+  background-color: slategray;
+}
+
+.writing-mode{
+  writing-mode: vertical-rl;
+}
+
+.pre-line{
+  white-space: pre-line;
+}
+
+.pre-wrap{
+  white-space: pre-wrap;
+}
+
+.pre{
+  white-space: pre;
+}
+
+.link:link{
+  color: red;
+}
+
+.link:hover{
+  color: yellowgreen;
+}
+
+.link:visited{
+  color: rosybrown;
+}
+
+.clip-path{
+  width: 200px;
+  height: 200px;
+  object-position: 0 10px ;
+  clip-path: polygon(100px 0, 0 200px, 200px 200px);
+}
+
+.shape{
+  width: 400px;
+  height: 400px;
+  clip-path: circle(200px);
+  margin: 1rem;
+  shape-outside: circle(200px);
+}
+
+.rigth{
+  float: right;
+
+}
+
+.left{
+  float: left;
+}
+
+.bg-blend-mode{
+  background-image: url("img/rosario.jpg"),url("img/konachan.jpg");
+  height: 100vh;
+  background-blend-mode: multiply;
 }
