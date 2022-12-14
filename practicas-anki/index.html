@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tarjetas anki chino</title>
+  <title>Practicas - Anki</title>
   <link rel="stylesheet" href="style-dist.css">
+  <link rel="apple-touch-icon" href="img/favicon.jpg">
+  <meta name="theme-color" content="#12f5a9">
+
 </head>
 <body>
 
-  <div class="container card">
+  <canvas id="canvas" width="300" height="200">
+  </canvas>
 
-    <div class="box">
-      <p class="lang">english</p>
-      <p class="term">no need to see me off （vocabulary)</p>
-    </div>
 
-    <div class="box">
-      <p class="lang">english-espanish</p>
-      <p class="term">no hay necesidad de despedirme (vocabulario)</p>
-    </div>
+  <p>dimenciones:</p>
+  <p>ancho: <span id="width"></span></p>
+  <p>alto: <span id="height"></span></p>
 
-    <div class="box">
-      <p class="lang">chinese-espanish</p>
-      <p class="term">detente</p>
-    </div>
-  </div>                  
+  <template id="template">
+    <img>
+  </template> 
 
+  <div id="gallery"></div> 
+  <img srcset="img/rosario.jpg 320w,
+                img/konachan.jpg 540w"
+
+     src="img/luffy.jpg" alt="imagen espectacular">
+  
+  <button id="click">click</button>
+  <button id="rclick">remover click</button>
+
+  <script src="anki.js"></script>
 </body>
 </html>

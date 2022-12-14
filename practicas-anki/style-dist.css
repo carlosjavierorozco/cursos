@@ -1,1 +1,8 @@
-.card{font-family:arial;font-size:4em;text-align:center;color:black;background-color:white}body{background-image:url(img/konachan.jpg);background-color:#333;background-size:cover}.card{background-color:transparent}.chinese{font-family:hanzi}.container{display:-webkit-box;display:-ms-flexbox;display:flex}.box{border:1px solid black;height:95vh;width:31vw;margin:1vw;color:white;text-shadow:0 0 6px purple;font-size:2rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:0;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.lang{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;margin-top:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-transform:uppercase;margin-bottom:0}.box:nth-child(2n) p{background-color:rgba(0,0,0,.7)}.box:nth-child(odd) p{background-color:rgba(0,0,0,.6)}.box:nth-child(2n) .lang{border-bottom:3px solid rgba(255,255,255,.5);background-color:rgba(0,0,0,.8)}.box:nth-child(odd) .lang{border-bottom:3px solid rgba(255,255,255,.6);background-color:rgba(0,0,0,.7)}.box:nth-child(2n){-webkit-box-shadow:0 0 5px yellow,0 0 5px black,0 0 20px white,0 0 30px purple;box-shadow:0 0 5px yellow,0 0 5px black,0 0 20px white,0 0 30px purple}.box:nth-child(odd){-webkit-box-shadow:0 0 5px yellow,0 0 5px black,0 0 20px white,0 0 30px blue;box-shadow:0 0 5px yellow,0 0 5px black,0 0 20px white,0 0 30px blue}.term{-webkit-box-flex:6;-ms-flex-positive:6;flex-grow:6;margin-top:0;padding-top:10%;margin-bottom:0}@media screen and (max-width:400px){.card{font-size:2rem}}
+canvas{
+  border: 1px solid purple;
+}
+
+img{
+  max-width: 300px;
+}
+
