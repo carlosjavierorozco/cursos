@@ -1,66 +1,11 @@
-h1{
-  text-transform: uppercase;
-  color: steelblue;
+canvas{
+  border: 1px solid purple;
 }
 
-ol{
-  column-count: 5;
-  column-rule: 1px solid blue;
-  column-gap: 4rem;
-  list-style-position: outside;
+img{
+  max-width: 300px;
+  color: skyblue;
+  border-radius: 50%;
+  border: 5px solid steelblue;
 }
 
-.square{
-  width: 500px;
-  height: 500px;
-  background-image: url(img/konachan.jpg);
-  clip-path: inset(1rem round 1rem);
-}
-
-.square h1{
-  background-color: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-
-}
-
-.conic{
-  background-image: conic-gradient(red 0 33%, yellow 33% 66%,blue 66%);
-}
-
-.chica{
-  filter: drop-shadow(5px 5px 5px lime);
-}
-
-.mix{
-  clip-path: none;
-  border: 1px solid blue;
-  position: relative;
-  background-image: none;
-  height: auto;
-
-
-}
-
-.mix img{
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  mix-blend-mode: color;
-}
-
-.lista{
-  background-color: rgba(125, 124, 230, .5);
-}
-
-.lista :nth-child(n+5):nth-child(even){
-  background-color: red;
-}
-
-li:nth-child(-n+4){
-  background-color: blueviolet;
-}
-
-:indeterminate {
-  background-color: red;
-}
