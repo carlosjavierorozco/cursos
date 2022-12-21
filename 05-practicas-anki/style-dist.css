@@ -1,1 +1,1 @@
-canvas{border:1px solid purple}img{max-width:300px;color:skyblue;border-radius:50%;border:5px solid steelblue}
+.App{min-height:100vh;background-color:purple;line-height:1.4}body{margin:0}main{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}footer,header{background-color:skyblue;padding:2rem}aside{background-color:limegreen;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;-webkit-box-flex:30%;-ms-flex:30%;flex:30%}section{-webkit-box-flex:70%;-ms-flex:70%;flex:70%;background-color:tomato}
