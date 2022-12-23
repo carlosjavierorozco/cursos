@@ -1,43 +1,15 @@
-.App{
-  background-color: dimgray;
+table{
+  border: thin solid black;
+  empty-cells: hide;
+
 }
 
-body{
-  margin: 0;
-  box-sizing: border-box;
-}
-header{
-  background-color: tomato;
-  min-height: 15vh;
+
+tr{
+  background-color: red;
+
 }
 
-main{
-  display: flex;
-  align-items: stretch;
-  min-height: 70vh;
+td{
+  background-color: blue;
 }
-
-section{
-  background-color: purple;
-  flex-basis: 80%;
-  color: white;
-}
-
-aside{
-  flex-basis: 20%;
-  background-color: skyblue;
-}
-
-footer{
-  min-height: 15vh;
-  background-color: coral;
-}
-
-img{
-  width: 200px;
-  border: thin solid tomato;
-  border-radius: 50%;
-}
-
-/* ejemplo suuuuper sencillo sin media query ni nada
-simplemente afianzando conceptos */

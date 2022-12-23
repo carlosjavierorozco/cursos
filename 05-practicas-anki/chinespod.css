@@ -1,0 +1,30 @@
+.chinese{
+  background-color: red;
+}
+
+.pinyin {
+  background-color: purple;
+}
+
+.english{
+  background-color: salmon;
+}
+
+table,div{
+    display: none;
+}
+
+.tabla1{
+  display: table;
+  border: thin solid black;
+  border-collapse: collapse;
+  empty-cells: hide;
+}
+
+td{
+  border: thin solid black;
+}
+
+td:empty{
+  display: none;
+}
