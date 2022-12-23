@@ -17,17 +17,15 @@ let galleryContent = [
     }
     ];
 
-const template = document.getElementById("template").content
+const template = document.getElementsByTagName("template")[0].content
 const fragmento = document.createDocumentFragment()
-const gallery = document.getElementById("gallery")
+const gallery = document.querySelector("div")
 
 galleryContent.forEach((el)=>{
-  template.querySelector("img").setAttribute("src",el.img)
-  template.querySelector("img").setAttribute("alt",el.title)
-
-  let clone = document.importNode(template,true)
-
-  fragmento.append(clone)
+  template.querySelector("img").src = el.img;
+  template.querySelector("img").alt = el.title;
+  clone = document.importNode(template,true);
+  fragmento.appendChild(clone)
 })
 
-gallery.append(fragmento)
+gallery.appendChild(fragmento)

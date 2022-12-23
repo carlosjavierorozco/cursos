@@ -33,6 +33,11 @@ footer{
   background-color: coral;
 }
 
+img{
+  width: 200px;
+  border: thin solid tomato;
+  border-radius: 50%;
+}
 
 /* ejemplo suuuuper sencillo sin media query ni nada
 simplemente afianzando conceptos */
