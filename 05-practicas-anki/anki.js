@@ -17,17 +17,11 @@ let galleryContent = [
     }
     ];
 
-const template = document.getElementById("template").content
-const fragmento = document.createDocumentFragment()
-const gallery = document.getElementById("gallery")
+let canvas = document.getElementById("myCanvas")
+let ctx = canvas.getContext("2d")
 
-galleryContent.forEach((el)=>{
-  template.querySelector("img").setAttribute("src",el.img)
-  template.querySelector("img").setAttribute("alt",el.title)
-
-  let clone = document.importNode(template,true)
-
-  fragmento.append(clone)
-})
-
-gallery.append(fragmento)
+let grd = ctx.createLinearGradient(0,0,100,0)
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
