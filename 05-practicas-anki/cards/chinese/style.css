@@ -1,0 +1,64 @@
+@import url("_normalize.css");
+@import url("_menuHorizontal.css");
+@import url("_styles_for_syntax_highlighting.css");
+
+.container{
+  background-image: url(_code-anime.jpg);
+  background-position: 650px center;
+  background-size: 1150px;
+  height: 100vh;
+  overflow: hidden;
+  color: whitesmoke;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.contain{
+  overflow: inherit;
+  background-color: rgba(0, 0, 0, .6);
+}
+.question{
+  margin: 1rem .5rem;
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+.tags{
+  margin-top: 1rem;
+  display: block;
+  text-transform: capitalize;
+  color: #fcdc00;
+}
+
+.tags::before{
+  content: "tags: ";
+}
+
+.code{
+  text-transform: none;
+  font-size: 1.2rem;
+}
+
+.highlighttable *{
+  white-space: pre-wrap;}
+
+/* media para mi tablet canaima */
+@media screen and (min-width: 1280px){
+  
+  .container{
+    background-position: center;
+    background-size: 1280px;
+  } 
+
+  .tags{
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (min-width: 1300px){
+  .container{
+    background-image: none;
+  }
+}
